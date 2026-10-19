@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "Shoplite API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health check",
+      "event": [{"listen": "test", "script": {"type": "text/javascript",
+        "exec": ["pm.test('status is 200', function () { pm.response.to.have.status(200); });"]}}],
+      "request": {"method": "GET", "url": {"raw": "{{baseUrl}}/api/health", "host": ["{{baseUrl}}"], "path": ["api", "health"]}}
+    },
+    {
+      "name": "List products",
+      "event": [{"listen": "test", "script": {"type": "text/javascript",
+        "exec": ["pm.test('returns a list', function () { pm.expect(pm.response.json()).to.be.an('array'); });"]}}],
+      "request": {"method": "GET", "url": {"raw": "{{baseUrl}}/api/products", "host": ["{{baseUrl}}"], "path": ["api", "products"]}}
+    }
+  ]
+}

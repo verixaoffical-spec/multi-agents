@@ -1,0 +1,8 @@
+google-adk
+litellm
+python-dotenv
+fastapi
+uvicorn
+httpx
+psycopg[binary]
+psycopg-pool

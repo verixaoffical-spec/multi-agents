@@ -1,0 +1,10 @@
+{
+  "name": "shoplite-tests",
+  "private": true,
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.0.0",
+    "newman": "^6.2.3",
+    "typescript": "^5.6.0"
+  }
+}
